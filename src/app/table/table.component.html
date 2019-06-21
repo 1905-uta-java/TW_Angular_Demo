@@ -1,0 +1,17 @@
+
+<div id="Table">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>BDay</td>
+      </tr>
+    </thead>
+    <tr *ngFor="let person of people">
+      <td> {{person.first_name | concatSpaced:person.last_name}} </td>
+      <td> {{person.email}} </td>
+      <td> {{person.birthday | date}} </td>
+    </tr>
+  </table>
+</div>

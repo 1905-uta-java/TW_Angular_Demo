@@ -1,0 +1,26 @@
+<div id="radioButtons">
+  <input type="radio" name="requested" value="animals" checked="checked" (click)="chooseAnimal()">Animals
+  <input type="radio" name="requested" value="colors" (click)="chooseColor()">Colors
+  <input type="radio" name="requested" value="days" (click)="chooseDay()">Days
+</div>
+<div id="animalList" class="list">
+  <ul>
+    <li *ngFor="let x of animals">
+      {{x}}
+    </li>
+  </ul>
+</div>
+<div id="colorList" class="list">
+  <ul>
+    <li *ngFor="let x of colors">
+      {{x}}
+    </li>
+  </ul>
+</div>
+<div id="dayList" class="list">
+  <ul>
+    <li *ngFor="let x of days">
+      {{x}}
+    </li>
+  </ul>
+</div>

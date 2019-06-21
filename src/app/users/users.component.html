@@ -1,0 +1,22 @@
+<div class="container">
+  <h4>User List</h4>
+  <button class="btn btn-primary" (click)="getUsers()">List Users</button>
+  <table *ngIf='user_info != null'>
+    <thead>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Username</td>
+      <td>Email</td>
+      <td>Phone</td>
+      <td>Website</td>
+    </thead>
+    <tr *ngFor='let user of user_info'>
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.website}}</td>
+    </tr>
+  </table>
+</div>
